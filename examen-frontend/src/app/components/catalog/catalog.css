@@ -1,0 +1,27 @@
+/* Sombra suave por defecto */
+.shadow-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden; /* Para que la imagen no se salga al redondear */
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.product-card:hover {
+  transform: translateY(-10px); /* Sube la tarjeta */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+}
+
+/* Efecto en la cabecera de color */
+.card-header-visual {
+  transition: all 0.5s ease;
+}
+
+.product-card:hover .card-header-visual {
+  filter: brightness(1.1); /* Se ilumina un poco */
+}
+
+/* Ajustes finos */
+.badge {
+  font-weight: 500;
+  font-size: 0.8rem;
+}

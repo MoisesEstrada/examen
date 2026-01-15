@@ -1,0 +1,13 @@
+# Angular
+/front/examen-frontend/node_modules/
+/front/examen-frontend/.angular/
+/front/examen-frontend/dist/
+
+# Java / Spring Boot
+/demo/target/
+/demo/.idea/
+/demo/*.class
+
+# Misceláneos
+.vscode/
+.DS_Store

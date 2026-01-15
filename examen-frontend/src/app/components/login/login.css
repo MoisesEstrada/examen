@@ -1,0 +1,44 @@
+/* Ocupar toda la pantalla y poner fondo bonito */
+.login-wrapper {
+  min-height: 100vh;
+  background: #f0f2f5; /* Color base suave */
+  /* Opcional: Si quieres un fondo con imagen o degradado, descomenta la siguiente línea */
+  /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+}
+
+/* Tamaño fijo de la tarjeta pero responsivo */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  animation: slideIn 0.6s ease-out; /* Animación de entrada */
+}
+
+/* Inputs más limpios */
+.form-control:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 0 0.25rem rgba(118, 75, 162, 0.25);
+}
+
+/* Animación del botón al pasar el mouse */
+.btn-animate {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-animate:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4) !important;
+}
+
+/* Keyframes para la entrada suave */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
